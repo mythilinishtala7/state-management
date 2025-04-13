@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Todo } from './todo.model';
+import { Todo } from '../../models/todo.model';
 
 @Component({
-  selector: 'app-todo-list',
+  selector: 'app-local-todo-list',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss']
 })
-export class TodoListComponent {
+export class TodoListLocalComponent {
   todos: Todo[] = [];
   newTodoText: string = '';
 

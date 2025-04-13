@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { Todo } from '../todo-list/todo.model';
+import { Todo } from '../../models/todo.model';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-local-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderLocalComponent {
   @Input() todos: Todo[] = []; 
 
   get incompleteTodoCount(): number {

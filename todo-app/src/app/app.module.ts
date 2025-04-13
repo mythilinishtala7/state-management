@@ -1,24 +1,39 @@
+// Step 8: Register Store – Uncomment commented lines to declare components, register the todo reducer globally and enable routing 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from './header/header.component';
+import { HeaderLocalComponent } from './local-state/header/header.component';
+import { TodoListLocalComponent } from './local-state/todo-list/todo-list.component';
+
+// import { AppRoutingModule } from './app-routing.module';
+// import { TodoListNgRXComponent } from './ngrx-state/todo-list/todo-list.component';
+// import { HeaderNgRXComponent } from './ngrx-state/header/header.component';
+// import { StoreModule } from '@ngrx/store';
+// import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+// import { todoReducer } from './store/reducers/todo.reducer';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent,
-    HeaderComponent
+    TodoListLocalComponent,
+    HeaderLocalComponent,
+    // TodoListNgRXComponent,
+    // HeaderNgRXComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // AppRoutingModule,
+    // StoreModule.forRoot({ todos: todoReducer }),
+    // StoreDevtoolsModule.instrument({
+    //   maxAge: 5,
+    // })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
