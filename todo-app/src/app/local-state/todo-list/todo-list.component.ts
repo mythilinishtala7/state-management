@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Todo } from '../../models/todo.model';
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-local-todo-list',
@@ -10,11 +11,17 @@ export class TodoListLocalComponent {
   todos: Todo[] = [];
   newTodoText: string = '';
 
+  constructor(private todoService: TodoService) {
+    this.todoService.getTodos().subscribe(data=>{
+      this.todos = data;
+    })
+  }
+
   addTodo() {
     if (this.newTodoText.trim()) {
       const newTodo: Todo = {
         id: this.todos.length + 1,
-        text: this.newTodoText,
+        title: this.newTodoText,
         completed: false
       };
 

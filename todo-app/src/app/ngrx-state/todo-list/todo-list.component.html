@@ -8,7 +8,7 @@
 
   <ul>
     <li *ngFor="let todo of todos">
-      <span [class.completed]="todo.completed">{{ todo.text }}</span>
+      <span [class.completed]="todo.completed">{{ todo.title }}</span>
       <div>
         <button class="toggle" (click)="toggleTodo(todo.id)">Toggle</button>
         <button class="remove" (click)="removeTodo(todo.id)">Remove</button>

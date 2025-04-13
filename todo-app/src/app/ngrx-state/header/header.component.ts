@@ -1,4 +1,4 @@
-// Step 5: Select State – Uncomment below to read todo data from the global store using selector
+// Step 6: Select State – Uncomment below to read todo data from the global store using selector
 
 // import { Component } from '@angular/core';
 // import { Store } from '@ngrx/store';
