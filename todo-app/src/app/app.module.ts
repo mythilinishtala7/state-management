@@ -7,14 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { HeaderLocalComponent } from './local-state/header/header.component';
 import { TodoListLocalComponent } from './local-state/todo-list/todo-list.component';
 import { HttpClientModule } from '@angular/common/http';
-
-// import { AppRoutingModule } from './app-routing.module';
-// import { TodoListNgRXComponent } from './ngrx-state/todo-list/todo-list.component';
 // import { HeaderNgRXComponent } from './ngrx-state/header/header.component';
+// import { TodoListNgRXComponent } from './ngrx-state/todo-list/todo-list.component';
+// import { EffectsModule } from '@ngrx/effects';
 // import { StoreModule } from '@ngrx/store';
 // import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+// import { AppRoutingModule } from './app-routing.module';
 // import { todoReducer } from './store/reducers/todo.reducer';
-// import { EffectsModule } from '@ngrx/effects';
 // import { TodoEffects } from './store/effects/todo.effects';
 
 
@@ -32,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     // AppRoutingModule,
     // StoreModule.forRoot({ todos: todoReducer }),
+
     // EffectsModule.forRoot([TodoEffects]),
     // StoreDevtoolsModule.instrument({
     //   maxAge: 5,

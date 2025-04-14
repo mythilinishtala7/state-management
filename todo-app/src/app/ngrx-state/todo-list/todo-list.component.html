@@ -10,7 +10,10 @@
     <li *ngFor="let todo of todos">
       <span [class.completed]="todo.completed">{{ todo.title }}</span>
       <div>
-        <button class="toggle" (click)="toggleTodo(todo.id)">Toggle</button>
+        <button class="toggle" [ngClass]="todo.completed ? 'incomplete-btn' : 'complete-btn'"
+          (click)="toggleTodo(todo.id)">
+          {{ todo.completed ? 'Mark as Incomplete' : 'Mark as Complete' }}
+        </button>
         <button class="remove" (click)="removeTodo(todo.id)">Remove</button>
       </div>
     </li>

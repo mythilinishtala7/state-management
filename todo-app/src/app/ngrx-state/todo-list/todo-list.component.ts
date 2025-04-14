@@ -18,17 +18,6 @@
 
 //   constructor(private store: Store) {
 //     this.todos$ = this.store.select(selectTodos);
-//     this.store.select(selectTodosLoaded)
-//     .pipe(take(1))
-//     .subscribe(loaded => {
-//       if (!loaded) {
-//         this.store.dispatch(loadTodos());
-//       }
-//     });
-//   }
-
-//   loadFromAPI() {
-//     this.store.dispatch(loadTodos());
 //   }
 
 //   addTodo(): void {

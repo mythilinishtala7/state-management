@@ -11,11 +11,7 @@ export class TodoListLocalComponent {
   todos: Todo[] = [];
   newTodoText: string = '';
 
-  constructor(private todoService: TodoService) {
-    this.todoService.getTodos().subscribe(data=>{
-      this.todos = data;
-    })
-  }
+  constructor() {}
 
   addTodo() {
     if (this.newTodoText.trim()) {

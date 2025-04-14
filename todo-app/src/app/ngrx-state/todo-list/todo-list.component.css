@@ -34,11 +34,6 @@
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Styling for the Todo List */
   ul {
     list-style: none;
     padding: 0;
@@ -64,17 +59,12 @@
     margin-left: 10px;
   }
   
-  button.toggle {
-    background-color: #ff9800;
-  }
+
   
   button.remove {
     background-color: #f44336;
   }
-  
-  button.toggle:hover {
-    background-color: #e68900;
-  }
+ 
   
   button.remove:hover {
     background-color: #e53935;
@@ -83,5 +73,21 @@
   button[disabled] {
     background-color: #ccc;
     cursor: not-allowed;
+  }
+  
+  .complete-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .incomplete-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
   }
   
